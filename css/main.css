@@ -1,0 +1,131 @@
+/* ==========================================================================
+   Defaults
+   ========================================================================== */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+input[type=text] {
+    width: 90%;
+    height: 50px;
+    border: none;
+    font-size: 1.3em;
+    padding-left: 10px;
+    margin: 0 0 30px 0;
+}
+
+input[type=submit] {
+    background: #00aeef url('../images/add.png') no-repeat center;
+    width: 8%;
+    height: 50px;
+    border: none;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #00ffff;
+}
+
+input[name=new-text] {
+    width: 80%;
+    height: 30px;
+}
+
+
+/* ==========================================================================
+   Main page styles
+   ========================================================================== */
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.task {
+    height: 35px;
+    margin: 15px 0;
+}
+
+.delete {
+    float: right;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background: url('../images/icons.png') -4px -43px;
+}
+
+.delete:hover {
+    background: url('../images/icons.png') -42px -43px;
+}
+
+
+/* Default (current) task styles -------------------- */
+
+.task-text {
+    border-bottom: 1px dotted #000;
+    font-size: 1.3em;
+    width: 90%;
+    margin-left: 50px;
+    padding: 4px 0;
+}
+
+.check {
+    float: left;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    background: url('../images/icons.png') -4px -4px;
+}
+
+.check:hover {
+    background: url('../images/icons.png') -42px -4px;
+}
+
+
+/* Completed task styles -------------------- */
+
+#completed .task-text {
+    color: #bbb;
+    border-color: #bbb;
+}
+
+#completed .check {
+    background: url('../images/icons.png') -80px -4px;
+}
+
+#completed .check:hover {
+    background: url('../images/icons.png') -4px -4px;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.rounded {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+@media (max-width: 750px) {
+    input[type=text] {
+        width: 80%;
+    }
+    input[type=submit] {
+        width: 15%;
+    }
+    input[name=new-text] {
+        width: 60%;
+    }
+}
